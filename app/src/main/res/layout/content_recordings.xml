@@ -10,4 +10,15 @@
     tools:showIn="@layout/activity_recordings"
     tools:context="com.example.jezhou.soapboxvr.Recordings">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Listen To Recordings"
+        android:textColor="#fb14345f"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
