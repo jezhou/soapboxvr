@@ -4,11 +4,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Listen To Recordings"
+        android:onClick="Recordings"
+        android:id="@+id/recording_button"
+        android:clickable="true"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/audience_button"
+        android:longClickable="false" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Select Audience"
+        android:id="@+id/audience_button"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/recording_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Switch To Cardboard Mode"
+        android:id="@+id/button3"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/audience_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Settings"
+        android:id="@+id/settings_button"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="soapboxvr"
+        android:id="@+id/textView"
+        android:textColor="#fb14345f"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
 </RelativeLayout>
